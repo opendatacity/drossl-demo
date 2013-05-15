@@ -20,9 +20,30 @@ $(document).ready(function(){
 		$('body').addClass('not-in-frame');
 	}
 	
-	/* post button */
+	/* post actions */
 	$('#button-post').click(function(){
 		$('body').addClass('show-post');
+	});
+	$('#post-close').click(function(){
+		$('body').removeClass('show-post');
+	});
+	$('#post-form').submit(function(evt){
+		evt.preventDefault();
+		$.post("api/post.json", {
+			cache: false,
+			data: {
+				slogan: $('#slogan').val()
+			},
+			dataType: "json",
+			success: function(data){
+				if ("error" in data) {
+					$('#message').text(data.error);
+				} else {
+					$('#slogan').val('');
+					$('body').removeClass('show-post');
+				}
+			}
+		});
 	});
 	
 	/* update stuff */

@@ -51,12 +51,15 @@
 			<!-- div id="spinner"></div -->
 		</div>
 		<div id="post">
-			<form action="javascript:;" method="post">
+			<form action="javascript:;" method="post" id="post-form">
 				<div id="post-inner">
 					<p>
 						Sende uns Deinen Spruch, wir sorgen dafür, dass er auf einem der Protestschilder erscheint.
 					</p>
-					
+					<input type="text" value="" maxlength="60" id="slogan" name="slogan" />
+					<input type="submit" value="Senden">
+					<div id="message"></div>
+					<a href="javascript:;" id="post-close">Schließen</a>
 				</div>
 			</form>
 		</div>
