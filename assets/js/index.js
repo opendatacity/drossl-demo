@@ -29,7 +29,8 @@ $(document).ready(function(){
 	});
 	$('#post-form').submit(function(evt){
 		evt.preventDefault();
-		$.post("api/post.json", {
+		$.post({
+			url: "api/post.json",
 			cache: false,
 			data: {
 				slogan: $('#slogan').val()
