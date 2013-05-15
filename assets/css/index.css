@@ -56,7 +56,6 @@ body {
 	
 	#post {
 		display: none;
-		visibility: hidden;
 	}
 	
 	.show-post #post {
