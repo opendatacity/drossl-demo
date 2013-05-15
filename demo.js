@@ -84,8 +84,8 @@ sess.cleanuptimer = setInterval(function(){
 var updatetimer = setInterval(function(){
 
 	/* update site slogans */
-	if (data.queue.slogans.length > 0) data.site.slogans.push(data.queue.slogans.unshift());
-	if (data.site.slogans.length > 4) data.site.slogans.unshift();
+	if (data.queue.slogans.length > 0) data.site.slogans.push(data.queue.slogans.shift());
+	if (data.site.slogans.length > 4) data.site.slogans.shift();
 	
 },10000);
 
