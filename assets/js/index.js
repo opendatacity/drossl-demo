@@ -29,22 +29,14 @@ $(document).ready(function(){
 	});
 	$('#post-form').submit(function(evt){
 		evt.preventDefault();
-		$.post({
-			url: "api/post.json",
-			cache: false,
-			data: {
-				slogan: $('#slogan').val()
-			},
-			dataType: "json",
-			success: function(data){
-				if (data.error) {
-					$('#message').text(data.error);
-				} else {
-					$('#slogan').val('');
-					$('body').removeClass('show-post');
-				}
+		$.post("api/post.json",{slogan: $('#slogan').val()}, function(data){
+			if (data.error) {
+				$('#message').text(data.error);
+			} else {
+				$('#slogan').val('');
+				$('body').removeClass('show-post');
 			}
-		});
+		},"json");
 	});
 	
 	/* update stuff */
