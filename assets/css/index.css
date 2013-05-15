@@ -54,14 +54,12 @@ body {
 
 	/* post form */
 	
-	/*
 	#post {
 		display: none;
 		visibility: hidden;
 	}
-	*/
 	
-	#post {
+	.show-post #post {
 		
 		display: block;
 		position: fixed;
