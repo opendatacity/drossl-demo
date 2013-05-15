@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Fnord Awesome';
+	src: url('fnordawesome-webfont.eot');
+	src: url('fnordawesome-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fnordawesome-webfont.woff') format('woff'),
+		url('fnordawesome-webfont.ttf') format('truetype'),
+		url('fnordawesome-webfont.svg#fnordawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

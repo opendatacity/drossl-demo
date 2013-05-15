@@ -1,0 +1,404 @@
+body {
+	
+	background: #fff;
+	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+	height: 100%;
+	
+}
+
+	header {
+		
+		display: block;
+		position: absolute;
+		clear: both;
+		top: 0px;
+		left: 120px;
+		z-index: 50;
+		
+	}
+	
+		header h1 {
+			
+			display: block;
+			position: relative;
+			height: 90px;
+			margin: 0px;
+			padding: 0px;
+			text-align: left;
+			
+		}
+		
+			header h1 a {
+				
+				display: block;
+				position: relative;
+				height: 90px;
+				line-height: 90px;
+				font-size: 65px;
+				text-decoration: none;
+				color: #d07;
+				font-family: "Leckerli";
+				font-weight: normal;
+				text-shadow: 0px 0px 35px #fff, 0px 0px 25px #fff;
+				
+			}
+			
+				header h1 a:hover,
+				header h1 a:active,
+				header h1 a:focus {
+	
+					color: #c06;
+					text-decoration: none;
+					
+				}
+
+	/* post form */
+	
+	/*
+	#post {
+		display: none;
+		visibility: hidden;
+	}
+	*/
+	
+	#post {
+		
+		display: block;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		bottom: 0px;
+		right: 0px;
+		z-index: 100;
+		background-color: rgba(255,255,255,0.9);
+		
+	}
+	
+		#post-inner {
+			
+			display: block;
+			position: relative;
+			width: 600px;
+			margin: 150px auto 0px;
+			border: 1px solid #f00;
+			
+		}
+
+
+	/* iframe */
+	
+	#protest-target {
+		
+		display: block;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 51px;
+		overflow: hidden;
+		z-index: 10;
+		
+	}
+	
+		#protest-target iframe {
+			
+			display: block;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			width: 100%;
+			height: 100%;
+			border-width: 0px;
+			z-index: 20;
+
+		}
+		
+		#protesters {
+			
+			display: block;
+			z-index: 30;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			height: 320px;
+			background: url(../img/demo.png) left bottom no-repeat;
+			
+		}
+		
+			#protesters-slogan-1 {
+				
+				display: block;
+				position: absolute;
+				left: 223px;
+				bottom: 145px;
+				width: 85px;
+				height: 75px;
+				color: #fff;
+				text-align: center;
+				padding: 5px;
+				font-size: 11px;
+				font-weight: bold;
+				text-transform: uppercase;
+				line-height: 1.35em;
+				
+				-moz-transform: rotate(-13deg);
+				-webkit-transform: rotate(-13deg);
+				-o-transform: rotate(-13deg);
+				-ms-transform: rotate(-13deg);
+				transform: rotate(-13deg);
+				
+			}
+
+			#protesters-slogan-2 {
+				
+				display: block;
+				position: absolute;
+				left: 400px;
+				bottom: 137px;
+				width: 113px;
+				height: 87px;
+				color: #fff;
+				text-align: center;
+				padding: 5px;
+				font-size: 11px;
+				font-weight: bold;
+				text-transform: uppercase;
+				line-height: 1.35em;
+				
+			}
+			
+			#protesters-slogan-3 {
+				
+				display: block;
+				position: absolute;
+				left: 616px;
+				bottom: 117px;
+				width: 90px;
+				height: 102px;
+				color: #fff;
+				text-align: center;
+				padding: 5px;
+				font-size: 11px;
+				font-weight: bold;
+				text-transform: uppercase;
+				line-height: 1.35em;
+				
+			}
+			
+			#protesters-slogan-4 {
+				
+				display: block;
+				position: absolute;
+				left: 842px;
+				bottom: 157px;
+				width: 127px;
+				height: 60px;
+				color: #fff;
+				text-align: center;
+				padding: 5px;
+				font-size: 11px;
+				font-weight: bold;
+				text-transform: uppercase;
+				line-height: 1.35em;
+				
+				-moz-transform: rotate(18deg);
+				-webkit-transform: rotate(15deg);
+				-o-transform: rotate(15deg);
+				-ms-transform: rotate(15deg);
+				transform: rotate(20deg);
+				
+			}
+			
+			#spinner {
+				
+				display: block;
+				position: absolute;
+				left: 797px;
+				bottom: 255px;
+				width: 16px;
+				height: 11px;
+				background: url(../img/spinner.gif) top left no-repeat;
+				z-index: 25;
+				
+			}
+			
+			#controls {
+				
+				display: block;
+				position: absolute;
+				right: 20px;
+				top: 0px;
+				padding: 10px;
+				height: 44px;
+				line-height: 44px;
+				z-index: 100;
+				background-color: rgba(0,0,0,0.75);
+				-webkit-border-bottom-right-radius: 10px;
+				-webkit-border-bottom-left-radius: 10px;
+				-moz-border-radius-bottomright: 10px;
+				-moz-border-radius-bottomleft: 10px;
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				
+			}
+			
+				#controls #stat {
+					
+					display: block;
+					position: relative;
+					height: 44px;
+					line-height: 44px;
+					float: left;
+					margin-right: 10px;
+					font-weight: bold;
+					font-size: 18px;
+					color: #ccc;
+					
+				}
+				
+					#controls #stat .big {
+						
+						font-size: 32px;
+						color: #fff;
+						
+					}
+
+	footer {
+		
+		display: block;
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		margin: 0px;
+		padding: 0px;
+		border-top: 1px solid #ebebeb;
+		color: #666;
+		background-color: #fff;
+		min-height: 50px;
+		line-height: 50px;
+		z-index: 80;
+		
+	}
+	
+		footer p {
+		
+			display: block;
+			position: relative;
+			margin: 0px;
+			padding: 0px 10px;
+			min-height: 50px;
+			line-height: 50px;
+		
+		}
+
+			footer p a {
+				
+				color: #666 !important;
+				
+			}
+		
+		footer .cc-by {
+			
+			display: block;
+			position: relative;
+			width: 50px;
+			height: 50px;
+			text-indent: -99999px;
+			text-decoration: none;
+			color: transparent;
+			background: url(../img/cc-by.png) center center no-repeat;
+			
+		}
+		
+		footer .social {}
+
+			footer .social a {
+				
+				margin-left: 10px;
+				white-space: nowrap;
+				
+			}
+
+			footer .social a i {
+				
+				color: #ccc;
+				
+			}
+	
+@media screen and (max-width: 640px) {
+
+
+			
+}
+
+@media screen and (max-width: 320px) {
+
+	footer .cc-by, 
+	footer .license, 
+	footer .social, 
+	footer .odc {
+		
+		height: 30px;
+		min-height: 30px;
+		line-height: 30px;
+		
+	}
+	
+	footer .social a span {
+		
+		display: none;
+		
+	}
+	
+
+}
+
+#drossl-embed-container {
+	
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 2;
+	
+}
+
+	#drossl-embed {
+
+		max-width: 480px;
+		margin: 50px auto;
+
+	}
+	
+	#drossl-embed h2 {
+
+		font-size: 3.3em;
+		line-height: 1.4em;
+		font-weight: normal;
+
+	}
+	
+	#drossl-embed p {
+		
+		font-size: 1.4em;
+		line-height: 1.2em;
+		
+	}
+
+	#drossl-embed code {
+		
+		display: block;
+		white-space: normal;
+		color: #333;
+		padding: 10px;
+		margin-bottom: 10px;
+		
+	}

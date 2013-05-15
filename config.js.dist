@@ -1,0 +1,6 @@
+module.exports = {
+	"logfile": "test.log",
+	"secret": "ueshoo3ohJai4Yoixeezeev",
+	"host": "127.0.0.1",
+	"port": 8888
+}
