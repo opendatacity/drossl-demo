@@ -153,6 +153,7 @@ body {
 				font-weight: bold;
 				text-transform: uppercase;
 				line-height: 1.35em;
+				word-wrap: break-word;
 				
 				-moz-transform: rotate(-13deg);
 				-webkit-transform: rotate(-13deg);
@@ -177,6 +178,7 @@ body {
 				font-weight: bold;
 				text-transform: uppercase;
 				line-height: 1.35em;
+				word-wrap: break-word;
 				
 			}
 			
@@ -195,6 +197,7 @@ body {
 				font-weight: bold;
 				text-transform: uppercase;
 				line-height: 1.35em;
+				word-wrap: break-word;
 				
 			}
 			
@@ -213,6 +216,7 @@ body {
 				font-weight: bold;
 				text-transform: uppercase;
 				line-height: 1.35em;
+				word-wrap: break-word;
 				
 				-moz-transform: rotate(18deg);
 				-webkit-transform: rotate(15deg);
