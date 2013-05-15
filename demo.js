@@ -137,6 +137,11 @@ app.get('/api/data.json', function(req, res){
 app.post('/api/post.json', function(req, res){
 	var sessionid = sess.get(req);
 	
+	if (!("slogan" in req.body) || typeof req.body['slogan'] !== "string" || req.body['slogan'] === "") {
+		res.json({error: "Du musst Dir einen Spruch ausdenken."});
+		return;
+	}
+	
 	/* fix slogan */
 	var slogan = req.body['slogan'].replace(/[^ -~\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u017F]/gi, ''); // printable ascii plus bunch-o-diacrits
 	
