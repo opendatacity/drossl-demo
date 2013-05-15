@@ -36,7 +36,7 @@ $(document).ready(function(){
 			},
 			dataType: "json",
 			success: function(data){
-				if ("error" in data) {
+				if (data.error) {
 					$('#message').text(data.error);
 				} else {
 					$('#slogan').val('');
