@@ -77,6 +77,19 @@ body {
 			position: relative;
 			width: 600px;
 			margin: 150px auto 0px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.4);
+			padding: 20px;
+			
+		}
+		
+		#post-close {
+			
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 20px;
 			
 		}
 
@@ -225,19 +238,31 @@ body {
 				
 				display: block;
 				position: absolute;
-				right: 20px;
-				top: 0px;
+				left: 0px;
+				bottom: 0px;
+				right: 0px;
+				
+			}
+			
+			#controls-inner {	
+			
+				display: block;
+				position: relative;
+				margin: 0px auto;
+				width: 640px;
+			
 				padding: 10px;
-				height: 44px;
-				line-height: 44px;
+				height: 30px;
+				line-height: 30px;
 				z-index: 100;
-				background-color: rgba(0,0,0,0.75);
-				-webkit-border-bottom-right-radius: 10px;
-				-webkit-border-bottom-left-radius: 10px;
-				-moz-border-radius-bottomright: 10px;
-				-moz-border-radius-bottomleft: 10px;
-				border-bottom-right-radius: 10px;
-				border-bottom-left-radius: 10px;
+				background-color: rgba(255,255,255,0.75);
+				text-align: center;
+				-webkit-border-top-left-radius: 10px;
+				-webkit-border-top-right-radius: 10px;
+				-moz-border-radius-topleft: 10px;
+				-moz-border-radius-topright: 10px;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
 				
 			}
 			
@@ -245,20 +270,20 @@ body {
 					
 					display: block;
 					position: relative;
-					height: 44px;
-					line-height: 44px;
+					height: 30px;
+					line-height: 30px;
 					float: left;
 					margin-right: 10px;
 					font-weight: bold;
-					font-size: 18px;
-					color: #ccc;
+					font-size: 16px;
+					color: #444;
 					
 				}
 				
 					#controls #stat .big {
 						
-						font-size: 32px;
-						color: #fff;
+						font-size: 20px;
+						color: #000;
 						
 					}
 

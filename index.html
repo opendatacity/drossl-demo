@@ -34,7 +34,7 @@
 			<h1><a href="/">Online-Demo</a></h1>
 		</header>
 		<div id="protest-target">
-			<!-- iframe src="http://www.telekom.de/"></iframe -->
+			<iframe src="http://www.telekom.de/"></iframe>
 			<div id="protesters">
 				<div id="protesters-slogan-1">Lasst euch nicht erdrosseln!</div>
 				<div id="protesters-slogan-2">Volle Bandbreitseite gegen T-Offline</div>
@@ -42,22 +42,28 @@
 				<div id="protesters-slogan-4">Gegen Netzneutralitötung!</div>
 			</div>
 			<div id="controls">
-				<div id="stat">
-					<span class="big" id="show-protesters">Viele</span> sind gerade auf der Demo! 
-					<span class="big" id="show-protesters-total">Viele</span> haben insgesamt protestiert.
+				<div id="controls-inner">
+					<div id="stat">
+						<span class="big" id="show-protesters">Viele</span> sind gerade auf der Demo! 
+						<span class="big" id="show-protesters-total">Viele</span> haben insgesamt protestiert.
+					</div>
+					<a id="button-post" href="javascript:;" class="btn btn-default btn-danger">Empör Dich!</a>
 				</div>
-				<a id="button-post" href="javascript:;" class="btn btn-large btn-default btn-danger">Empör Dich!</a>
 			</div>
-			<!-- div id="spinner"></div -->
 		</div>
 		<div id="post">
 			<form action="javascript:;" method="post" id="post-form">
 				<div id="post-inner">
+					<h2>Empör Dich!</h2>
 					<p>
-						Sende uns Deinen Spruch, wir sorgen dafür, dass er auf einem der Protestschilder erscheint.
+						Sende uns Deinen Spruch.<br />
+						Wir sorgen dafür, dass er auf einem der Protestschilder erscheint.<br />
+						Es passen maximal 60 Zeichen auf ein Schild.
 					</p>
-					<input type="text" value="" maxlength="60" id="slogan" name="slogan" />
-					<input type="submit" value="Senden">
+					<div class="form-inline">
+						<input type="text" value="" maxlength="60" id="slogan" name="slogan" placeholder="Dein Spruch" />
+						<input type="submit" value="Senden" class="btn btn-primary">
+					</div>
 					<div id="message"></div>
 					<a href="javascript:;" id="post-close">Schließen</a>
 				</div>
