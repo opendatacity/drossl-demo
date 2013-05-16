@@ -226,18 +226,28 @@ body {
 				
 			}
 			
-			#spinner {
+			#banners {
 				
 				display: block;
 				position: absolute;
-				left: 797px;
-				bottom: 255px;
-				width: 16px;
-				height: 11px;
-				background: url(../img/spinner.gif) top left no-repeat;
-				z-index: 25;
+				right: 0px;
+				top: 0px;
+				width: 240px;
+				padding: 20px;
+				background-color: #fff;
+				box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.4);
+				-webkit-border-bottom-left-radius: 10px;
+				-moz-border-radius-bottomleft: 10px;
+				border-bottom-left-radius: 10px;
+				z-index: 99;
 				
 			}
+			
+				#banners a+a img {
+				
+					margin-top: 20px;
+				
+				}
 			
 			#controls {
 				
